@@ -1,3 +1,20 @@
 .container {
 	flex-flow: row wrap;
 }
+.item [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.item [type=radio] + div{
+  cursor: pointer;
+}
+.item [type=radio]:checked + div {
+  content:url(icon/attack.jpg);
+}
+.spirit_attack{
+  content:url(icon/attack.jpg);
+  height:64px;
+  width:64px;
+}
