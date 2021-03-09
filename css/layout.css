@@ -1,12 +1,6 @@
 .container {
 	flex-flow: row wrap;
 }
-.item [type=radio] {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 .item [type=radio] + div{
   cursor: pointer;
 }
