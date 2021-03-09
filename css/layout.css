@@ -1,11 +1,22 @@
 .container {
 	flex-flow: row wrap;
 }
+
 .item [type=radio] + div{
   cursor: pointer;
 }
+.item [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 .attack [type=radio]:checked + div {
   background:url(../icon/attack_on.png);
+  background-size: 64px;
+  height:64px;
+  width:64px;
 }
 .spirit_attack{
   background:url(../icon/attack.png);
