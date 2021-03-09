@@ -4,11 +4,12 @@
 .item [type=radio] + div{
   cursor: pointer;
 }
-.item [type=radio]:checked + div {
+.attack [type=radio]:checked + div {
   background:url(../icon/attack_on.png);
 }
 .spirit_attack{
   background:url(../icon/attack.png);
+  background-size: 64px;
   height:64px;
   width:64px;
 }
