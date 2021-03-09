@@ -13,10 +13,14 @@
 }
 
 .attack [type=radio]:checked + div {
+  display: flex;
+  align-items: flex-end;
   background:url(../icon/attack_on.png);
   background-size: 64px;
   height:64px;
   width:64px;
+  color:white;
+  font-weight: bold;
 }
 .spirit_attack{
   background:url(../icon/attack.png);
