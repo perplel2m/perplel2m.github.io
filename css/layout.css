@@ -11,10 +11,10 @@
   cursor: pointer;
 }
 .item [type=radio]:checked + div {
-  content:url(icon/attack.jpg);
+  content:url(icon/attack.png);
 }
 .spirit_attack{
-  content:url(icon/attack.jpg);
+  content:url(icon/attack.png);
   height:64px;
   width:64px;
 }
