@@ -6,6 +6,473 @@
     <link href="css/sanitize.css" rel="stylesheet" />
   </head>
   <body>
-    ddd
+    <div style="position:fixed; background-color:#BBB">
+            <label class="score" > 총 점수</label>
+            <label class="score" >사용 점수</label>
+            <label class="score" >남은 점수</label>
+            <br>
+            <input class="score" id="total" value='0' onclick="select()">
+            <label class="score" id="using">0</label>
+            <label class="score" id="remain">0</label>
+        </div>
+        <div style="width:245px; height:45px; ">
+
+        </div>
+
+        <table id="tbl1">
+            <tr>
+                <td></td>
+                <td>1 (7)</td>
+                <td>2 (15)</td>
+                <td>3 (26)</td>
+                <td>4 (53)</td>
+                <td>5 (90)</td>
+                <td>6 (139)</td>
+                <td>7 (201)</td>
+                <td>8 (277)</td>
+                <td>9 (368)</td>
+                <td>10 (474)</td>
+                <td>11 (590)</td>
+                <td>12 (730)</td>
+                <td>13 (880)</td>
+                <td>14 (1060)</td>
+                <td>15 (1250)</td>
+                <td>16 (1460)</td>
+                <td>17 (1690)</td>
+                <td>18 (1940)</td>
+                <td>19 (2210)</td>
+                <td>20 (2500)</td>
+            </tr>
+            <tr>
+                <td>공격</td>
+                <td>치명타 +2%</td>
+                <td>모든 대미지 +1</td>
+                <td>명중 +1</td>
+                <td>더블 확률 +1%,
+    PVE 추가 대미지 +1</td>
+                <td>대미지 내성 무시 +1%,
+    PVP 추가 대미지 +1</td>
+                <td>치명타 +3%</td>
+                <td>모든 대미지 +2</td>
+                <td>명중 +1</td>
+                <td>더블 확률 +1%,
+    PVE 추가 대미지 +1</td>
+                <td>대미지 내성 무시 +1%,
+    PVP 추가 대미지 +1</td>
+                <td>치명타 +4%,
+    스턴 대상 추가 리덕션 무시 +1</td>
+                <td>모든 대미지 +3</td>
+                <td>명중 +2,
+    스턴 대상 추가 리덕션 무시 +1</td>
+                <td>더블 확률 +1%</td>
+                <td>대미지 내성 무시 +1%</td>
+                <td>치명타 +5%,
+    스턴 대상 추가 리덕션 무시 +1</td>
+                <td>모든 대미지 +4</td>
+                <td>명중 +2,
+    스턴 대상 추가 리덕션 무시 +2</td>
+                <td>더블 확률 +1%,
+    PVE 추가 대미지 +2</td>
+                <td>대미지 내성 무시 +2%,
+    PVP 추가 대미지 +2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 인크리즈 어택</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 웨폰 마스터리</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성 인크리즈 더블 I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 인크리즈 스킬 파워</td>
+            </tr>
+            <tr>
+                <td>증폭</td>
+                <td>치명타 시 추가 대미지 +2,
+    스킬 대미지 증폭 +1%</td>
+                <td>더블 확률 +1%</td>
+                <td>무기 대미지 증폭 +2%,
+    모든 속성 증폭 +2%</td>
+                <td>막기 관통 +1%</td>
+                <td>스킬 대미지 증폭 +2%</td>
+                <td>치명타 시 추가 대미지 +3,
+    스킬 대미지 증폭 +2%</td>
+                <td>더블 확률 +1%</td>
+                <td>무기 대미지 증폭 +3%,
+    모든 속성 증폭 +3%</td>
+                <td>막기 관통 +2%</td>
+                <td>스킬 대미지 증폭 +2%</td>
+                <td>치명타 시 추가 대미지 +4,
+    스킬 대미지 증폭 +2%</td>
+                <td>더블 확률 +2%</td>
+                <td>무기 대미지 증폭 +5%,
+    모든 속성 증폭 +4%</td>
+                <td>막기 관통 +3%</td>
+                <td>스킬 대미지 증폭 +4%</td>
+                <td>치명타 시 추가 대미지 +5,
+    스킬 대미지 증폭 +2%</td>
+                <td>더블 확률 +2%</td>
+                <td>무기 대미지 증폭 +5%,
+    모든 속성 증폭 +5%</td>
+                <td>막기 관통 +4%</td>
+                <td>스킬 대미지 증폭 +5%</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 웨폰 블록 I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 인크리즈 크리티컬</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 피어스 리덕션</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 로얄 웨폰 마스터리</td>
+            </tr>
+            <tr>
+                <td>적중</td>
+                <td>명중 +1,
+    상태이상 적중 +2%</td>
+                <td>PVE 명중 +1,
+    스턴 대상 추가 명중 +1</td>
+                <td>PVP 명중 +1,
+    스킬 명중 +1</td>
+                <td>절대 명중률 +1%</td>
+                <td>스턴 적중 +1%,
+    홀드 적중 +1%</td>
+                <td>명중 +1,
+    상태이상 적중 +3%</td>
+                <td>PVE 명중 +1,
+    스턴 대상 추가 명중 +1</td>
+                <td>PVP 명중 +1,
+    스킬 명중 +1</td>
+                <td>절대 명중률 +1%</td>
+                <td>스턴 적중 +2%,
+    홀드 적중 +2%</td>
+                <td>명중 +1,
+    상태이상 적중 +4%</td>
+                <td>PVE 명중 +1,
+    스턴 대상 추가 명중 +1</td>
+                <td>PVP 명중 +1,
+    스킬 명중 +1</td>
+                <td>절대 명중률 +1%</td>
+                <td>스턴 적중 +4%,
+    홀드 적중 +4%</td>
+                <td>명중 +1,
+    상태이상 적중 +5%</td>
+                <td>PVE 명중 +2,
+    스턴 대상 추가 명중 +1</td>
+                <td>PVP 명중 +1,
+    스킬 명중 +1</td>
+                <td>절대 명중률 +1%</td>
+                <td>스턴 적중 +6%,
+    홀드 적중 +6%</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 샤프아이</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 쓰러스터 I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 어큐러시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 인크리즈 스턴 I</td>
+            </tr>
+            <tr>
+                <td>방어</td>
+                <td>최대 HP +300,
+    PVP 무기 대미지 내성 +1%</td>
+                <td>치명타 저항 +1%,
+    PVP 스킬 대미지 내성 +1%</td>
+                <td>무기 막기 +1%,
+    PVP 무기 대미지 내성 +2%</td>
+                <td>대미지 리덕션 +2,
+    PVP 스킬 대미지 내성 +2%</td>
+                <td>방어력 +2</td>
+                <td>최대 HP +300,
+    PVP 무기 대미지 내성 +1%</td>
+                <td>치명타 저항 +2%,
+    PVP 스킬 대미지 내성 +1%</td>
+                <td>무기 막기 +1%,
+    PVP 무기 대미지 내성 +2%</td>
+                <td>대미지 리덕션 +2,
+    PVP 스킬 대미지 내성 +2%</td>
+                <td>방어력 +2</td>
+                <td>최대 HP +300,
+    PVP 무기 대미지 내성 +2%</td>
+                <td>치명타 저항 +3%,
+    PVP 스킬 대미지 내성 +2%</td>
+                <td>무기 막기 +1%,
+    PVP 무기 대미지 내성 +2%</td>
+                <td>대미지 리덕션 +2,
+    PVP 스킬 대미지 내성 +2%</td>
+                <td>방어력 +2</td>
+                <td>최대 HP +300,
+    PVP 무기 대미지 내성 +2%</td>
+                <td>치명타 저항 +4%,
+    PVP 스킬 대미지 내성 +2%</td>
+                <td>무기 막기 +1%,
+    PVP 무기 대미지 내성 +3%</td>
+                <td>대미지 리덕션 +2,
+    PVP 스킬 대미지 내성 +3%</td>
+                <td>방어력 +2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 인크리즈 디펜스</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 이베이젼 마스터리</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 웨폰 블록 II</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 인크리즈 리덕션</td>
+            </tr>
+            <tr>
+                <td>생존</td>
+                <td>최대 HP +300,
+    PVP 대미지 내성 +1%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +1%,
+    더블 저항 +1%</td>
+               <td>최대 HP +300,
+    PVP 대미지 내성 +1%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +1%,
+    방어력 +1</td>
+                <td>대미지 내성 +1%,
+    PVP 대미지 내성 +2%</td>
+                <td>최대 HP +300,
+    PVP 대미지 내성 +1%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +1%,
+    더블 저항 +1%</td>
+               <td>최대 HP +300,
+    PVP 대미지 내성 +1%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +1%,
+    방어력 +1</td>
+                <td>대미지 내성 +1%,
+    PVP 대미지 내성 +2%</td>
+                <td>최대 HP +500,
+    PVP 대미지 내성 +2%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +2%,
+    더블 저항 +2%</td>
+               <td>최대 HP +500,
+    PVP 대미지 내성 +2%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +2%,
+    방어력 +1</td>
+                <td>대미지 내성 +1%,
+    PVP 대미지 내성 +2%</td>
+                <td>최대 HP +500,
+    PVP 대미지 내성 +2%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +3%,
+    더블 저항 +2%</td>
+               <td>최대 HP +500,
+    PVP 대미지 내성 +2%</td>
+                <td>물약 회볼률 +1%,
+    힐 증폭 +3%,
+    방어력 +1</td>
+                <td>대미지 내성 +2%,
+    PVP 대미지 내성 +2%</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 크리티컬 레지스트</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 하이 포션 I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 디펜시브 스킬 파워</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 이베이젼 I</td>
+            </tr>
+            <tr>
+                <td>상태이상</td>
+                <td>최대 HP +300,
+    스킬 저항 +1</td>
+                <td>상태이상 시간 감소 +1%,
+    홀드 내성 +1%</td>
+                <td>무기 대미지 내성 +2%</td>
+                <td>스킬 대미지 내성 +2%</td>
+                <td>스턴 내성 +1%</td>
+                <td>최대 HP +300,
+    스킬 저항 +1</td>
+                <td>상태이상 시간 감소 +1%,
+    홀드 내성 +1%</td>
+                <td>무기 대미지 내성 +2%</td>
+                <td>스킬 대미지 내성 +2%</td>
+                <td>스턴 내성 +1%,
+    홀드 내성 +1%</td>
+                <td>최대 HP +300,
+    스킬 저항 +1,
+    헤이트 내성 +2%</td>
+                <td>상태이상 시간 감소 +3%,
+    홀드 내성 +1%,
+    침묵 내성 +2%</td>
+                <td>무기 대미지 내성 +3%</td>
+                <td>스킬 대미지 내성 +3%</td>
+                <td>스턴 내성 +1%,
+    중첩 상태이상 내성 +5%</td>
+                <td>최대 HP +300,
+    스킬 저항 +1,
+    헤이트 내성 +3%</td>
+                <td>상태이상 시간 감소 +5%,
+    홀드 내성 +1%,
+    침묵 내성 +3%</td>
+                <td>무기 대미지 내성 +3%</td>
+                <td>스킬 대미지 내성 +3%</td>
+                <td>스턴 내성 +1%,
+    중첩 상태이상 내성 +5%</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 레지스트 스킬</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 더블 레지스트 I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 스턴 레지스트</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>각성: 스턴 베리어 I</td>
+            </tr>
+        </table>
+
+        <script>
+        let table = [7, 15, 26, 53, 90, 139, 201, 277, 368, 474,
+                    590, 730, 880, 1060, 1250, 1460, 1690, 1940, 2210, 2500]
+        let active = [0, 200, 800, 1800, 3000]
+        let score = 0
+        window.onload = function(){
+        document.getElementById("total").addEventListener("blur", function() {
+                document.getElementById("using").innerHTML = score
+                document.getElementById("remain").innerHTML = parseInt(document.getElementById("total").value,10) - score
+        });
+
+        document.getElementById('tbl1').onclick = function(e){
+            var e = e || window.event;
+            var target = e.target || e.srcElement;
+            if(target.tagName.toLowerCase() ==  "td") {
+                if(target.parentNode.rowIndex == 0){
+                    return;
+                }
+                if(target.parentNode.rowIndex % 2 == 0){
+                    if(target.cellIndex % 5 != 0){
+                        return;
+                    }
+                    if(target.className == 'selected') {
+                        target.className = ''
+                        console.log(active[target.cellIndex/5])
+                        score -= active[target.cellIndex/5]
+                    }
+                    else {
+                        target.className = 'selected'
+                        score += active[target.cellIndex/5]
+                    }
+
+                }
+                else{
+                    if(target.className == 'selected') {
+                        for(var i=target.cellIndex; i<=20; i++){
+                            if(target.parentNode.cells[i].className == 'selected'){
+                                target.parentNode.cells[i].className = ''
+                                score -= table[i-1]
+                            }
+                        }
+                    }
+                    else {
+                        for(var i=1; i<=target.cellIndex; i++){
+                            if(target.parentNode.cells[i].className != 'selected'){
+                                target.parentNode.cells[i].className = 'selected'
+                                score += table[i-1]
+                            }
+                        }
+                    }
+                }
+                //alert(target.innerHTML + target.parentNode.rowIndex+"행"+target.cellIndex+"열");
+
+                console.log(document.getElementById("total").value)
+                document.getElementById("using").innerHTML = score
+                document.getElementById("remain").innerHTML = parseInt(document.getElementById("total").value,10) - score
+            }
+        };
+    };
+        </script>
   </body>
 </html>
