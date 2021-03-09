@@ -23,8 +23,12 @@
   font-weight: bold;
 }
 .spirit_attack{
+  display: flex;
+  align-items: flex-end;
   background:url(../icon/attack.png);
   background-size: 64px;
   height:64px;
   width:64px;
+  color:white;
+  font-weight: bold;
 }
