@@ -1,5 +1,57 @@
+body{
+  height: 100vh;
+}
 .container {
-	flex-flow: row wrap;
+  display: flex;
+	flex-direction: column;
+  height: 100%;
+  color: white;
+}
+.container .article{
+  background: white;
+  border-radius: 0.2em;
+  width: 50%;
+  padding: 0.5em;
+  color:black;
+  margin: 0.5em;
+}
+.container .header{
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  background: #282844;
+}
+.container .header a{
+  text-decoration: none;
+  color:white;
+}
+.header ul{
+  margin:0;
+	padding:0;
+}
+.header li{
+  display:inline-block;
+  list-style:none;
+}
+.header li:first-child{
+  font-size: 2em;
+  margin-right: 1em;
+}
+.container .content{
+  flex:1;
+  overflow-y: auto;
+  background:rgb(13, 17, 21);
+}
+.spirit_score{
+  width: 100%;
+  display: flex;
+  border: 1px solid orange;
+  background:rgb(13, 17, 21);
+  color:white;
+  font-weight: bold;
+}
+.spirit_score div{
+  margin: 0 0.5em 0 0;
 }
 
 .item [type=radio] + div{
@@ -12,23 +64,261 @@
   height: 0;
 }
 
+
 .attack [type=radio]:checked + div {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   background:url(../icon/attack_on.png);
   background-size: 64px;
-  height:64px;
-  width:64px;
-  color:white;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
   font-weight: bold;
 }
+
+.amplification [type=radio]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/amplification_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.condition [type=radio]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/condition_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.defense [type=radio]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/defense_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.hit [type=radio]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/hit_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.survive [type=radio]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/survive_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.attack [type=checkbox]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/attack_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.amplification [type=checkbox]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/amplification_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.condition [type=checkbox]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/condition_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.defense [type=checkbox]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/defense_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.hit [type=checkbox]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/hit_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
+.survive [type=checkbox]:checked + div {
+  display: flex;
+  align-items: center;
+  background:url(../icon/survive_on.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+  font-weight: bold;
+}
+
 .spirit_attack{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   background:url(../icon/attack.png);
   background-size: 64px;
-  height:64px;
-  width:64px;
-  color:white;
-  font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+	justify-content:center;
+	text-align:center;
+}
+
+.spirit_amplification{
+  display: flex;
+  align-items: center;
+  background:url(../icon/amplification.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+	justify-content:center;
+	text-align:center;
+}
+
+.spirit_condition{
+  display: flex;
+  align-items: center;
+  background:url(../icon/condition.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+	justify-content:center;
+	text-align:center;
+}
+
+.spirit_defense{
+  display: flex;
+  align-items: center;
+  background:url(../icon/defense.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+	justify-content:center;
+	text-align:center;
+}
+
+.spirit_hit{
+  display: flex;
+  align-items: center;
+  background:url(../icon/hit.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+	justify-content:center;
+	text-align:center;
+}
+
+.spirit_survive{
+  display: flex;
+  align-items: center;
+  background:url(../icon/survive.png);
+  background-size: 64px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:64px;
+	min-width:64px;
+	justify-content:center;
+	text-align:center;
+}
+
+.spirit{
+  display: flex;
+	flex-wrap:wrap;
+	background:rgb(13, 17, 21);
+	color:white;
+}
+.title{
+  margin:0;
+  padding: 0;
+  background:rgb(13, 17, 21);
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+.spirit .item{
+	padding:1em;
+	width:16.6%;
+	font-size:0.8em;
+  text-align: center;
+}
+.spirit .v{
+  width:100%;
+}
+
+.item [type=checkbox] + div{
+  cursor: pointer;
+}
+.item img{
+  height:1em;
+}
+.item [type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }

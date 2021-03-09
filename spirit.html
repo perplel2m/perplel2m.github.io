@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>리니지2M</title>
+  <link href="css/sanitize.css" rel="stylesheet" />
+  <link href="css/layout.css?ver=2.0" rel="stylesheet" />
+  <script type="text/javascript" src="js\jquery-3.6.0.slim.min.js"></script>
+  <script type="text/javascript" src="js\spirit.js?ver=1.1"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+
+      <ul>
+        <li><a href="index.html">퍼플L2M</a></li>
+        <li>
+          <a href="spirit.html">집혼</a>
+        </li>
+      </ul>
+
+      <div class="spirit_score">
+        총합<div class="sum_score">0</div>
+        공격<div class="attack_score">0</div>
+        증폭<div class="amplification_score">0</div>
+        적중<div class="hit_score">0</div>
+        방어<div class="defense_score">0</div>
+        생존<div class="survive_score">0</div>
+        상태이상<div class="condition_score">0</div>
+      </div>
+    </div>
+    <div class="content">
+
+      <h3 class="title">공격</h3>
+      <div class="spirit">
+        <div class="item attack">
+          1 <img src="icon\ico_spirit.png">7
+          <label>
+            <input type="radio" name="attack" value="1">
+            <div class="spirit_attack">
+              치명타 +2%
+            </div>
+          </input>
+        </label>
+      </div>
+
+      <div class="item attack">
+        2 <img src="icon\ico_spirit.png">15
+        <label>
+          <input type="radio" name="attack" value="2">
+          <div class="spirit_attack">
+            모든 대미지 +1
+          </div>
+        </input>
+      </label>
+    </div>
+
+    <div class="item attack">
+      3 <img src="icon\ico_spirit.png">26
+      <label>
+        <input type="radio" name="attack" value="3">
+        <div class="spirit_attack">
+          명중 +1
+        </div>
+      </input>
+    </label>
+  </div>
+
+  <div class="item attack">
+    4 <img src="icon\ico_spirit.png">53
+    <label>
+      <input type="radio" name="attack" value="4">
+      <div class="spirit_attack">
+        더블 확률 +1%,<br>
+        PVE 추가 대미지 +1
+      </div>
+    </input>
+  </label>
+</div>
+
+<div class="item attack">
+  5 <img src="icon\ico_spirit.png">90
+  <label>
+    <input type="radio" name="attack" value="5">
+    <div class="spirit_attack">
+      대미지 내성 무시 +1%,<br>
+      PVP 추가 대미지 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  5-각성 <img src="icon\ico_spirit.png">200
+  <label>
+    <input type="checkbox" name="attack_v" value="1">
+    <div class="spirit_attack">
+      각성: 인크리즈 어택
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  6 <img src="icon\ico_spirit.png">139
+  <label>
+    <input type="radio" name="attack" value="6">
+    <div class="spirit_attack">
+      치명타 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  7 <img src="icon\ico_spirit.png">201
+  <label>
+    <input type="radio" name="attack" value="7">
+    <div class="spirit_attack">
+      모든 대미지 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  8 <img src="icon\ico_spirit.png">277
+  <label>
+    <input type="radio" name="attack" value="8">
+    <div class="spirit_attack">
+      명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  9 <img src="icon\ico_spirit.png">368
+  <label>
+    <input type="radio" name="attack" value="9">
+    <div class="spirit_attack">
+      더블 확률 +1%,<br>
+      PVE 추가 대미지 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  10 <img src="icon\ico_spirit.png">474
+  <label>
+    <input type="radio" name="attack" value="10">
+    <div class="spirit_attack">
+      대미지 내성 무시 +1%,<br>
+      PVP 추가 대미지 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  10-각성 <img src="icon\ico_spirit.png">800
+  <label>
+    <input type="checkbox" name="attack_v" value="2">
+    <div class="spirit_attack">
+      각성: 웨폰 마스터리
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  11 <img src="icon\ico_spirit.png">590
+  <label>
+    <input type="radio" name="attack" value="11">
+    <div class="spirit_attack">
+      치명타 +4%,<br>
+      스턴 대상 추가 리덕션 무시 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  12 <img src="icon\ico_spirit.png">730
+  <label>
+    <input type="radio" name="attack" value="12">
+    <div class="spirit_attack">
+      모든 대미지 +3
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  13 <img src="icon\ico_spirit.png">880
+  <label>
+    <input type="radio" name="attack" value="13">
+    <div class="spirit_attack">
+      명중 +2,<br>
+      스턴 대상 추가 리덕션 무시 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  14 <img src="icon\ico_spirit.png">1060
+  <label>
+    <input type="radio" name="attack" value="14">
+    <div class="spirit_attack">
+      더블 확률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  15 <img src="icon\ico_spirit.png">1250
+  <label>
+    <input type="radio" name="attack" value="15">
+    <div class="spirit_attack">
+      대미지 내성 무시 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  15-각성 <img src="icon\ico_spirit.png">1800
+  <label>
+    <input type="checkbox" name="attack_v" value="3">
+    <div class="spirit_attack">
+      각성: 인크리즈 더블 I
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  16 <img src="icon\ico_spirit.png">1460
+  <label>
+    <input type="radio" name="attack" value="16">
+    <div class="spirit_attack">
+      치명타 +5%,<br>
+      스턴 대상 추가 리덕션 무시 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  17 <img src="icon\ico_spirit.png">1690
+  <label>
+    <input type="radio" name="attack" value="17">
+    <div class="spirit_attack">
+      모든 대미지 +4
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  18 <img src="icon\ico_spirit.png">1940
+  <label>
+    <input type="radio" name="attack" value="18">
+    <div class="spirit_attack">
+      명중 +2,<br>
+      스턴 대상 추가 리덕션 무시 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  19 <img src="icon\ico_spirit.png">2210
+  <label>
+    <input type="radio" name="attack" value="19">
+    <div class="spirit_attack">
+      더블 확률 +1%,<br>
+      PVE 추가 대미지 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  20 <img src="icon\ico_spirit.png">2500
+  <label>
+    <input type="radio" name="attack" value="20">
+    <div class="spirit_attack">
+      대미지 내성 무시 +2%,<br>
+      PVP 추가 대미지 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item attack">
+  20-각성 <img src="icon\ico_spirit.png">3000
+  <label>
+    <input type="checkbox" name="attack_v" value="4">
+    <div class="spirit_attack">
+      각성: 인크리즈 스킬 파워
+    </div>
+  </input>
+</label>
+</div>
+
+</div>
+
+<h3 class="title">증폭</h3>
+<div class="spirit">
+  <div class="item amplification">
+    1 <img src="icon\ico_spirit.png">7
+    <label>
+      <input type="radio" name="amplification" value="1">
+      <div class="spirit_amplification">
+        치명타 시 추가 대미지 +2,<br>
+        스킬 대미지 증폭 +1%
+      </div>
+    </input>
+  </label>
+</div>
+
+<div class="item amplification">
+  2 <img src="icon\ico_spirit.png">15
+  <label>
+    <input type="radio" name="amplification" value="2">
+    <div class="spirit_amplification">
+      더블 확률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  3 <img src="icon\ico_spirit.png">26
+  <label>
+    <input type="radio" name="amplification" value="3">
+    <div class="spirit_amplification">
+      무기 대미지 증폭 +2%,<br>
+모든 속성 증폭 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  4 <img src="icon\ico_spirit.png">53
+  <label>
+    <input type="radio" name="amplification" value="4">
+    <div class="spirit_amplification">
+      막기 관통 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  5 <img src="icon\ico_spirit.png">90
+  <label>
+    <input type="radio" name="amplification" value="5">
+    <div class="spirit_amplification">
+      스킬 대미지 증폭 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  5-각성 <img src="icon\ico_spirit.png">200
+  <label>
+    <input type="checkbox" name="amplification_v" value="1">
+    <div class="spirit_amplification">
+      각성: 웨폰 블록 I
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  6 <img src="icon\ico_spirit.png">139
+  <label>
+    <input type="radio" name="amplification" value="6">
+    <div class="spirit_amplification">
+      치명타 시 추가 대미지 +3,<br>
+스킬 대미지 증폭 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  7 <img src="icon\ico_spirit.png">201
+  <label>
+    <input type="radio" name="amplification" value="7">
+    <div class="spirit_amplification">
+      더블 확률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  8 <img src="icon\ico_spirit.png">277
+  <label>
+    <input type="radio" name="amplification" value="8">
+    <div class="spirit_amplification">
+      무기 대미지 증폭 +3%,<br>
+  모든 속성 증폭 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  9 <img src="icon\ico_spirit.png">368
+  <label>
+    <input type="radio" name="amplification" value="9">
+    <div class="spirit_amplification">
+      막기 관통 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  10 <img src="icon\ico_spirit.png">474
+  <label>
+    <input type="radio" name="amplification" value="10">
+    <div class="spirit_amplification">
+      스킬 대미지 증폭 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  10-각성 <img src="icon\ico_spirit.png">800
+  <label>
+    <input type="checkbox" name="amplification_v" value="2">
+    <div class="spirit_amplification">
+      각성: 인크리즈 크리티컬
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  11 <img src="icon\ico_spirit.png">590
+  <label>
+    <input type="radio" name="amplification" value="11">
+    <div class="spirit_amplification">
+      치명타 시 추가 대미지 +4,<br>
+스킬 대미지 증폭 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  12 <img src="icon\ico_spirit.png">730
+  <label>
+    <input type="radio" name="amplification" value="12">
+    <div class="spirit_amplification">
+      더블 확률 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  13 <img src="icon\ico_spirit.png">880
+  <label>
+    <input type="radio" name="amplification" value="13">
+    <div class="spirit_amplification">
+      무기 대미지 증폭 +5%,<br>
+모든 속성 증폭 +4%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  14 <img src="icon\ico_spirit.png">1060
+  <label>
+    <input type="radio" name="amplification" value="14">
+    <div class="spirit_amplification">
+      막기 관통 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  15 <img src="icon\ico_spirit.png">1250
+  <label>
+    <input type="radio" name="amplification" value="15">
+    <div class="spirit_amplification">
+      스킬 대미지 증폭 +4%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  15-각성 <img src="icon\ico_spirit.png">1800
+  <label>
+    <input type="checkbox" name="amplification_v" value="3">
+    <div class="spirit_amplification">
+      각성: 피어스 리덕션
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  16 <img src="icon\ico_spirit.png">1460
+  <label>
+    <input type="radio" name="amplification" value="16">
+    <div class="spirit_amplification">
+      치명타 시 추가 대미지 +5,<br>
+스킬 대미지 증폭 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  17 <img src="icon\ico_spirit.png">1690
+  <label>
+    <input type="radio" name="amplification" value="17">
+    <div class="spirit_amplification">
+      더블 확률 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  18 <img src="icon\ico_spirit.png">1940
+  <label>
+    <input type="radio" name="amplification" value="18">
+    <div class="spirit_amplification">
+      무기 대미지 증폭 +5%,<br>
+모든 속성 증폭 +5%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  19 <img src="icon\ico_spirit.png">2210
+  <label>
+    <input type="radio" name="amplification" value="19">
+    <div class="spirit_amplification">
+      막기 관통 +4%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  20 <img src="icon\ico_spirit.png">2500
+  <label>
+    <input type="radio" name="amplification" value="20">
+    <div class="spirit_amplification">
+      스킬 대미지 증폭 +5%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item amplification">
+  20-각성 <img src="icon\ico_spirit.png">3000
+  <label>
+    <input type="checkbox" name="amplification_v" value="4">
+    <div class="spirit_amplification">
+      각성: 로얄 웨폰 마스터리
+    </div>
+  </input>
+</label>
+</div>
+
+</div>
+
+<h3 class="title">적중</h3>
+<div class="spirit">
+  <div class="item hit">
+    1 <img src="icon\ico_spirit.png">7
+    <label>
+      <input type="radio" name="hit" value="1">
+      <div class="spirit_hit">
+        명중 +1,<br>
+상태이상 적중 +2%
+      </div>
+    </input>
+  </label>
+</div>
+
+<div class="item hit">
+  2 <img src="icon\ico_spirit.png">15
+  <label>
+    <input type="radio" name="hit" value="2">
+    <div class="spirit_hit">
+      PVE 명중 +1,<br>
+스턴 대상 추가 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  3 <img src="icon\ico_spirit.png">26
+  <label>
+    <input type="radio" name="hit" value="3">
+    <div class="spirit_hit">
+      PVP 명중 +1,<br>
+스킬 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  4 <img src="icon\ico_spirit.png">53
+  <label>
+    <input type="radio" name="hit" value="4">
+    <div class="spirit_hit">
+      절대 명중률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  5 <img src="icon\ico_spirit.png">90
+  <label>
+    <input type="radio" name="hit" value="5">
+    <div class="spirit_hit">
+      스턴 적중 +1%,<br>
+홀드 적중 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  5-각성 <img src="icon\ico_spirit.png">200
+  <label>
+    <input type="checkbox" name="hit_v" value="1">
+    <div class="spirit_hit">
+      각성: 샤프아이
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  6 <img src="icon\ico_spirit.png">139
+  <label>
+    <input type="radio" name="hit" value="6">
+    <div class="spirit_hit">
+      명중 +1,<br>
+상태이상 적중 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  7 <img src="icon\ico_spirit.png">201
+  <label>
+    <input type="radio" name="hit" value="7">
+    <div class="spirit_hit">
+      PVE 명중 +1,<br>
+스턴 대상 추가 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  8 <img src="icon\ico_spirit.png">277
+  <label>
+    <input type="radio" name="hit" value="8">
+    <div class="spirit_hit">
+      PVP 명중 +1,<br>
+스킬 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  9 <img src="icon\ico_spirit.png">368
+  <label>
+    <input type="radio" name="hit" value="9">
+    <div class="spirit_hit">
+      절대 명중률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  10 <img src="icon\ico_spirit.png">474
+  <label>
+    <input type="radio" name="hit" value="10">
+    <div class="spirit_hit">
+      스턴 적중 +2%,<br>
+홀드 적중 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  10-각성 <img src="icon\ico_spirit.png">800
+  <label>
+    <input type="checkbox" name="hit_v" value="2">
+    <div class="spirit_hit">
+      각성: 쓰러스터 I
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  11 <img src="icon\ico_spirit.png">590
+  <label>
+    <input type="radio" name="hit" value="11">
+    <div class="spirit_hit">
+      명중 +1,<br>
+상태이상 적중 +4%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  12 <img src="icon\ico_spirit.png">730
+  <label>
+    <input type="radio" name="hit" value="12">
+    <div class="spirit_hit">
+      PVE 명중 +1,<br>
+스턴 대상 추가 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  13 <img src="icon\ico_spirit.png">880
+  <label>
+    <input type="radio" name="hit" value="13">
+    <div class="spirit_hit">
+      PVP 명중 +1,<br>
+스킬 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  14 <img src="icon\ico_spirit.png">1060
+  <label>
+    <input type="radio" name="hit" value="14">
+    <div class="spirit_hit">
+      절대 명중률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  15 <img src="icon\ico_spirit.png">1250
+  <label>
+    <input type="radio" name="hit" value="15">
+    <div class="spirit_hit">
+      스턴 적중 +4%,<br>
+홀드 적중 +4%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  15-각성 <img src="icon\ico_spirit.png">1800
+  <label>
+    <input type="checkbox" name="hit_v" value="3">
+    <div class="spirit_hit">
+      각성: 어큐러시
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  16 <img src="icon\ico_spirit.png">1460
+  <label>
+    <input type="radio" name="hit" value="16">
+    <div class="spirit_hit">
+      명중 +1,<br>
+상태이상 적중 +5%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  17 <img src="icon\ico_spirit.png">1690
+  <label>
+    <input type="radio" name="hit" value="17">
+    <div class="spirit_hit">
+      PVE 명중 +2,<br>
+스턴 대상 추가 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  18 <img src="icon\ico_spirit.png">1940
+  <label>
+    <input type="radio" name="hit" value="18">
+    <div class="spirit_hit">
+      PVP 명중 +1,<br>
+스킬 명중 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  19 <img src="icon\ico_spirit.png">2210
+  <label>
+    <input type="radio" name="hit" value="19">
+    <div class="spirit_hit">
+      절대 명중률 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  20 <img src="icon\ico_spirit.png">2500
+  <label>
+    <input type="radio" name="hit" value="20">
+    <div class="spirit_hit">
+      스턴 적중 +6%,<br>
+홀드 적중 +6%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item hit">
+  20-각성 <img src="icon\ico_spirit.png">3000
+  <label>
+    <input type="checkbox" name="hit_v" value="4">
+    <div class="spirit_hit">
+      	각성: 인크리즈 스턴 I
+    </div>
+  </input>
+</label>
+</div>
+
+</div>
+
+<h3 class="title">방어</h3>
+<div class="spirit">
+  <div class="item defense">
+    1 <img src="icon\ico_spirit.png">7
+    <label>
+      <input type="radio" name="defense" value="1">
+      <div class="spirit_defense">
+        최대 HP +300,<br>
+PVP 무기 대미지 내성 +1%
+      </div>
+    </input>
+  </label>
+</div>
+
+<div class="item defense">
+  2 <img src="icon\ico_spirit.png">15
+  <label>
+    <input type="radio" name="defense" value="2">
+    <div class="spirit_defense">
+      치명타 저항 +1%,<br>
+PVP 스킬 대미지 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  3 <img src="icon\ico_spirit.png">26
+  <label>
+    <input type="radio" name="defense" value="3">
+    <div class="spirit_defense">
+      무기 막기 +1%,<br>
+PVP 무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  4 <img src="icon\ico_spirit.png">53
+  <label>
+    <input type="radio" name="defense" value="4">
+    <div class="spirit_defense">
+      대미지 리덕션 +2,<br>
+PVP 스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  5 <img src="icon\ico_spirit.png">90
+  <label>
+    <input type="radio" name="defense" value="5">
+    <div class="spirit_defense">
+      방어력 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  5-각성 <img src="icon\ico_spirit.png">200
+  <label>
+    <input type="checkbox" name="defense_v" value="1">
+    <div class="spirit_defense">
+      각성: 인크리즈 디펜스
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  6 <img src="icon\ico_spirit.png">139
+  <label>
+    <input type="radio" name="defense" value="6">
+    <div class="spirit_defense">
+      최대 HP +300,<br>
+PVP 무기 대미지 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  7 <img src="icon\ico_spirit.png">201
+  <label>
+    <input type="radio" name="defense" value="7">
+    <div class="spirit_defense">
+      치명타 저항 +2%,<br>
+PVP 스킬 대미지 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  8 <img src="icon\ico_spirit.png">277
+  <label>
+    <input type="radio" name="defense" value="8">
+    <div class="spirit_defense">
+      무기 막기 +1%,<br>
+PVP 무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  9 <img src="icon\ico_spirit.png">368
+  <label>
+    <input type="radio" name="defense" value="9">
+    <div class="spirit_defense">
+      대미지 리덕션 +2,<br>
+PVP 스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  10 <img src="icon\ico_spirit.png">474
+  <label>
+    <input type="radio" name="defense" value="10">
+    <div class="spirit_defense">
+      방어력 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  10-각성 <img src="icon\ico_spirit.png">800
+  <label>
+    <input type="checkbox" name="defense_v" value="2">
+    <div class="spirit_defense">
+      각성: 이베이젼 마스터리
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  11 <img src="icon\ico_spirit.png">590
+  <label>
+    <input type="radio" name="defense" value="11">
+    <div class="spirit_defense">
+      최대 HP +300,<br>
+PVP 무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  12 <img src="icon\ico_spirit.png">730
+  <label>
+    <input type="radio" name="defense" value="12">
+    <div class="spirit_defense">
+      치명타 저항 +3%,<br>
+PVP 스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  13 <img src="icon\ico_spirit.png">880
+  <label>
+    <input type="radio" name="defense" value="13">
+    <div class="spirit_defense">
+      무기 막기 +1%,<br>
+PVP 무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  14 <img src="icon\ico_spirit.png">1060
+  <label>
+    <input type="radio" name="defense" value="14">
+    <div class="spirit_defense">
+      대미지 리덕션 +2,<br>
+PVP 스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  15 <img src="icon\ico_spirit.png">1250
+  <label>
+    <input type="radio" name="defense" value="15">
+    <div class="spirit_defense">
+      방어력 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  15-각성 <img src="icon\ico_spirit.png">1800
+  <label>
+    <input type="checkbox" name="defense_v" value="3">
+    <div class="spirit_defense">
+      각성: 웨폰 블록 II
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  16 <img src="icon\ico_spirit.png">1460
+  <label>
+    <input type="radio" name="defense" value="16">
+    <div class="spirit_defense">
+      최대 HP +300,<br>
+PVP 무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  17 <img src="icon\ico_spirit.png">1690
+  <label>
+    <input type="radio" name="defense" value="17">
+    <div class="spirit_defense">
+      치명타 저항 +4%,<br>
+PVP 스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  18 <img src="icon\ico_spirit.png">1940
+  <label>
+    <input type="radio" name="defense" value="18">
+    <div class="spirit_defense">
+      무기 막기 +1%,<br>
+PVP 무기 대미지 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  19 <img src="icon\ico_spirit.png">2210
+  <label>
+    <input type="radio" name="defense" value="19">
+    <div class="spirit_defense">
+      대미지 리덕션 +2,<br>
+PVP 스킬 대미지 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  20 <img src="icon\ico_spirit.png">2500
+  <label>
+    <input type="radio" name="defense" value="20">
+    <div class="spirit_defense">
+      방어력 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item defense">
+  20-각성 <img src="icon\ico_spirit.png">3000
+  <label>
+    <input type="checkbox" name="defense_v" value="4">
+    <div class="spirit_defense">
+      각성: 인크리즈 리덕션
+    </div>
+  </input>
+</label>
+</div>
+
+</div>
+
+<h3 class="title">생존</h3>
+<div class="spirit">
+  <div class="item survive">
+    1 <img src="icon\ico_spirit.png">7
+    <label>
+      <input type="radio" name="survive" value="1">
+      <div class="spirit_survive">
+        최대 HP +300,<br>
+PVP 대미지 내성 +1%
+      </div>
+    </input>
+  </label>
+</div>
+
+<div class="item survive">
+  2 <img src="icon\ico_spirit.png">15
+  <label>
+    <input type="radio" name="survive" value="2">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +1%,<br>
+더블 저항 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  3 <img src="icon\ico_spirit.png">26
+  <label>
+    <input type="radio" name="survive" value="3">
+    <div class="spirit_survive">
+      최대 HP +300,<br>
+PVP 대미지 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  4 <img src="icon\ico_spirit.png">53
+  <label>
+    <input type="radio" name="survive" value="4">
+    <div class="spirit_survive">
+      물약 회볼률 +1%,<br>
+힐 증폭 +1%,<br>
+방어력 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  5 <img src="icon\ico_spirit.png">90
+  <label>
+    <input type="radio" name="survive" value="5">
+    <div class="spirit_survive">
+      대미지 내성 +1%,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  5-각성 <img src="icon\ico_spirit.png">200
+  <label>
+    <input type="checkbox" name="survive_v" value="1">
+    <div class="spirit_survive">
+      각성: 크리티컬 레지스트
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  6 <img src="icon\ico_spirit.png">139
+  <label>
+    <input type="radio" name="survive" value="6">
+    <div class="spirit_survive">
+      최대 HP +300,<br>
+PVP 대미지 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  7 <img src="icon\ico_spirit.png">201
+  <label>
+    <input type="radio" name="survive" value="7">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +1%,<br>
+더블 저항 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  8 <img src="icon\ico_spirit.png">277
+  <label>
+    <input type="radio" name="survive" value="8">
+    <div class="spirit_survive">
+      최대 HP +300,<br>
+PVP 대미지 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  9 <img src="icon\ico_spirit.png">368
+  <label>
+    <input type="radio" name="survive" value="9">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +1%,<br>
+방어력 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  10 <img src="icon\ico_spirit.png">474
+  <label>
+    <input type="radio" name="survive" value="10">
+    <div class="spirit_survive">
+      대미지 내성 +1%,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  10-각성 <img src="icon\ico_spirit.png">800
+  <label>
+    <input type="checkbox" name="survive_v" value="2">
+    <div class="spirit_survive">
+      각성: 하이 포션 I
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  11 <img src="icon\ico_spirit.png">590
+  <label>
+    <input type="radio" name="survive" value="11">
+    <div class="spirit_survive">
+      최대 HP +500,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  12 <img src="icon\ico_spirit.png">730
+  <label>
+    <input type="radio" name="survive" value="12">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +2%,<br>
+더블 저항 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  13 <img src="icon\ico_spirit.png">880
+  <label>
+    <input type="radio" name="survive" value="13">
+    <div class="spirit_survive">
+      최대 HP +500,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  14 <img src="icon\ico_spirit.png">1060
+  <label>
+    <input type="radio" name="survive" value="14">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +2%,<br>
+방어력 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  15 <img src="icon\ico_spirit.png">1250
+  <label>
+    <input type="radio" name="survive" value="15">
+    <div class="spirit_survive">
+      대미지 내성 +1%,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  15-각성 <img src="icon\ico_spirit.png">1800
+  <label>
+    <input type="checkbox" name="survive_v" value="3">
+    <div class="spirit_survive">
+      각성: 디펜시브 스킬 파워
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  16 <img src="icon\ico_spirit.png">1460
+  <label>
+    <input type="radio" name="survive" value="16">
+    <div class="spirit_survive">
+      최대 HP +500,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  17 <img src="icon\ico_spirit.png">1690
+  <label>
+    <input type="radio" name="survive" value="17">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +3%,<br>
+더블 저항 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  18 <img src="icon\ico_spirit.png">1940
+  <label>
+    <input type="radio" name="survive" value="18">
+    <div class="spirit_survive">
+      최대 HP +500,<br>
+PVP 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  19 <img src="icon\ico_spirit.png">2210
+  <label>
+    <input type="radio" name="survive" value="19">
+    <div class="spirit_survive">
+      물약 회복률 +1%,<br>
+힐 증폭 +3%,<br>
+방어력 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  20 <img src="icon\ico_spirit.png">2500
+  <label>
+    <input type="radio" name="survive" value="20">
+    <div class="spirit_survive">
+      대미지 내성 무시 +2%,<br>
+      PVP 추가 대미지 +2
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item survive">
+  20-각성 <img src="icon\ico_spirit.png">3000
+  <label>
+    <input type="checkbox" name="survive_v" value="4">
+    <div class="spirit_survive">
+      각성: 인크리즈 스킬 파워
+    </div>
+  </input>
+</label>
+</div>
+
+</div>
+
+<h3 class="title">상태이상</h3>
+<div class="spirit">
+  <div class="item condition">
+    1 <img src="icon\ico_spirit.png">7
+    <label>
+      <input type="radio" name="condition" value="1">
+      <div class="spirit_condition">
+        최대 HP +300,<br>
+스킬 저항 +1
+      </div>
+    </input>
+  </label>
+</div>
+
+<div class="item condition">
+  2 <img src="icon\ico_spirit.png">15
+  <label>
+    <input type="radio" name="condition" value="2">
+    <div class="spirit_condition">
+      상태이상 시간 감소 +1%,<br>
+홀드 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  3 <img src="icon\ico_spirit.png">26
+  <label>
+    <input type="radio" name="condition" value="3">
+    <div class="spirit_condition">
+      무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  4 <img src="icon\ico_spirit.png">53
+  <label>
+    <input type="radio" name="condition" value="4">
+    <div class="spirit_condition">
+      스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  5 <img src="icon\ico_spirit.png">90
+  <label>
+    <input type="radio" name="condition" value="5">
+    <div class="spirit_condition">
+      스턴 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  5-각성 <img src="icon\ico_spirit.png">200
+  <label>
+    <input type="checkbox" name="condition_v" value="1">
+    <div class="spirit_condition">
+      각성: 레지스트 스킬
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  6 <img src="icon\ico_spirit.png">139
+  <label>
+    <input type="radio" name="condition" value="6">
+    <div class="spirit_condition">
+      최대 HP +300,<br>
+스킬 저항 +1
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  7 <img src="icon\ico_spirit.png">201
+  <label>
+    <input type="radio" name="condition" value="7">
+    <div class="spirit_condition">
+      상태이상 시간 감소 +1%,<br>
+홀드 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  8 <img src="icon\ico_spirit.png">277
+  <label>
+    <input type="radio" name="condition" value="8">
+    <div class="spirit_condition">
+      무기 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  9 <img src="icon\ico_spirit.png">368
+  <label>
+    <input type="radio" name="condition" value="9">
+    <div class="spirit_condition">
+      스킬 대미지 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  10 <img src="icon\ico_spirit.png">474
+  <label>
+    <input type="radio" name="condition" value="10">
+    <div class="spirit_condition">
+      스턴 내성 +1%,<br>
+홀드 내성 +1%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  10-각성 <img src="icon\ico_spirit.png">800
+  <label>
+    <input type="checkbox" name="condition_v" value="2">
+    <div class="spirit_condition">
+      각성: 더블 레지스트 I
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  11 <img src="icon\ico_spirit.png">590
+  <label>
+    <input type="radio" name="condition" value="11">
+    <div class="spirit_condition">
+      최대 HP +300,<br>
+스킬 저항 +1,<br>
+헤이트 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  12 <img src="icon\ico_spirit.png">730
+  <label>
+    <input type="radio" name="condition" value="12">
+    <div class="spirit_condition">
+      상태이상 시간 감소 +3%,<br>
+홀드 내성 +1%,<br>
+침묵 내성 +2%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  13 <img src="icon\ico_spirit.png">880
+  <label>
+    <input type="radio" name="condition" value="13">
+    <div class="spirit_condition">
+    무기 대미지 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  14 <img src="icon\ico_spirit.png">1060
+  <label>
+    <input type="radio" name="condition" value="14">
+    <div class="spirit_condition">
+      스킬 대미지 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  15 <img src="icon\ico_spirit.png">1250
+  <label>
+    <input type="radio" name="condition" value="15">
+    <div class="spirit_condition">
+      스턴 내성 +1%,<br>
+중첩 상태이상 내성 +5%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  15-각성 <img src="icon\ico_spirit.png">1800
+  <label>
+    <input type="checkbox" name="condition_v" value="3">
+    <div class="spirit_condition">
+      각성: 스턴 레지스트
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  16 <img src="icon\ico_spirit.png">1460
+  <label>
+    <input type="radio" name="condition" value="16">
+    <div class="spirit_condition">
+      최대 HP +300,<br>
+스킬 저항 +1,<br>
+헤이트 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  17 <img src="icon\ico_spirit.png">1690
+  <label>
+    <input type="radio" name="condition" value="17">
+    <div class="spirit_condition">
+      상태이상 시간 감소 +5%,<br>
+홀드 내성 +1%,<br>
+침묵 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  18 <img src="icon\ico_spirit.png">1940
+  <label>
+    <input type="radio" name="condition" value="18">
+    <div class="spirit_condition">
+    무기 대미지 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  19 <img src="icon\ico_spirit.png">2210
+  <label>
+    <input type="radio" name="condition" value="19">
+    <div class="spirit_condition">
+      스킬 대미지 내성 +3%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  20 <img src="icon\ico_spirit.png">2500
+  <label>
+    <input type="radio" name="condition" value="20">
+    <div class="spirit_condition">
+      스턴 내성 +1%,<br>
+중첩 상태이상 내성 +5%
+    </div>
+  </input>
+</label>
+</div>
+
+<div class="item condition">
+  20-각성 <img src="icon\ico_spirit.png">3000
+  <label>
+    <input type="checkbox" name="condition_v" value="4">
+    <div class="spirit_condition">
+      각성: 스턴 베리어 I
+    </div>
+  </input>
+</label>
+</div>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
